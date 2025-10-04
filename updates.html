@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Development Platform</title>
+  <!-- styling -->
+    <link rel="stylesheet" href="styles/updates.css">
+    <link rel="stylesheet" href="styles/footer.css">
+        <link rel="icon" type="image/x-icon" href="logo\Novaversity LOGO .jpg">
+
+ 
+    <!-- bootstarp links  -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+      const navbarToggleBtn = document.getElementById("navbarToggleBtn");
+      const navbarContent = document.getElementById("navbarSupportedContent");
+    
+      // Add click event listener to the toggle button
+      navbarToggleBtn.addEventListener("click", () => {
+        // Toggle the `show` class for responsiveness
+        navbarContent.classList.toggle("show");
+      });
+    });
+    
+       </script>
+    
+    
+    
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-2">
+  <div class="container-fluid">
+    <!-- Navbar Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="clubmembers.html">Club Members</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="updates.html">Updates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Script to highlight active page in #5B3B99 -->
+<script>
+  const currentPage = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll('.navbar .nav-link');
+
+  navLinks.forEach(link => {
+    const linkPage = link.getAttribute('href');
+    if (linkPage === currentPage || (linkPage === "index.html" && currentPage === "")) {
+      // Active page
+      link.style.color = "#5B3B99";
+      link.classList.add('fw-bold');
+    } else {
+      // Other links
+      link.style.color = "#333"; // dark gray for non-active
+    }
+  });
+</script>
+      
+
+    <header>
+        <br><br><h1>Career Development Platform</h1>
+        <p>Your gateway to courses, internships, and career growth</p>
+    </header>
+
+    <!-- Courses Section -->
+ <section id="courses">
+  <h2 style="color: #5B3B99;">Explore New Courses</h2>
+  <div class="course-grid" style="display: flex; flex-wrap: wrap; gap: 20px;">
+
+    <div class="course-card" style="flex: 1 1 300px; max-width: 300px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ccc; padding: 20px; box-sizing: border-box; min-height: 350px;">
+      <div>
+        <h3>Python for Data Science (IBM CognitiveClass)</h3>
+        <p style="text-align: justify; margin-bottom: 20px;">
+          Kickstart your programming journey with this beginner-friendly course by IBM. Learn Python basics, data structures, and hands-on labs for data analysis.
+        </p>
+      </div>
+      <a href="https://students.yourlearning.ibm.com/activity/SN-COURSE-V1:COGNITIVECLASS+PY0101EN+V3" target="_blank" style="align-self: flex-start; padding: 10px 20px; background-color: #5B3B99; color: white; text-decoration: none; border-radius: 5px;">Explore Now</a>
+    </div>
+
+    <div class="course-card" style="flex: 1 1 300px; max-width: 300px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ccc; padding: 20px; box-sizing: border-box; min-height: 350px;">
+      <div>
+        <h3>Python (Kaggle Learn)</h3>
+        <p style="text-align: justify; margin-bottom: 20px;">
+          Dive into Python programming for data science. Understand syntax, loops, and functions, and work with data using NumPy and Pandas.
+        </p>
+      </div>
+      <a href="https://www.kaggle.com/learn/python" target="_blank" style="align-self: flex-start; padding: 10px 20px; background-color: #5B3B99; color: white; text-decoration: none; border-radius: 5px;">Explore Now</a>
+    </div>
+
+    <div class="course-card" style="flex: 1 1 300px; max-width: 300px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ccc; padding: 20px; box-sizing: border-box; min-height: 350px;">
+      <div>
+        <h3>Introduction to SQL (Kaggle)</h3>
+        <p style="text-align: justify; margin-bottom: 20px;">
+          Learn SQL fundamentals for querying databases — filtering, aggregating, and joining tables through interactive lessons.
+        </p>
+      </div>
+      <a href="https://www.kaggle.com/learn/intro-to-sql" target="_blank" style="align-self: flex-start; padding: 10px 20px; background-color: #5B3B99; color: white; text-decoration: none; border-radius: 5px;">Explore Now</a>
+    </div>
+
+    <div class="course-card" style="flex: 1 1 300px; max-width: 300px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ccc; padding: 20px; box-sizing: border-box; min-height: 350px;">
+      <div>
+        <h3>Advanced SQL (Kaggle)</h3>
+        <p style="text-align: justify; margin-bottom: 20px;">
+          Level up your SQL knowledge with window functions, subqueries, and performance optimization in databases.
+        </p>
+      </div>
+      <a href="https://www.kaggle.com/learn/advanced-sql" target="_blank" style="align-self: flex-start; padding: 10px 20px; background-color: #5B3B99; color: white; text-decoration: none; border-radius: 5px;">Explore Now</a>
+    </div>
+
+    <div class="course-card" style="flex: 1 1 300px; max-width: 300px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ccc; padding: 20px; box-sizing: border-box; min-height: 350px;">
+      <div>
+        <h3>Intro to Machine Learning (Kaggle)</h3>
+        <p style="text-align: justify; margin-bottom: 20px;">
+          Get hands-on experience with machine learning concepts like classification, regression, and model evaluation.
+        </p>
+      </div>
+      <a href="https://www.kaggle.com/learn/intro-to-machine-learning" target="_blank" style="align-self: flex-start; padding: 10px 20px; background-color: #5B3B99; color: white; text-decoration: none; border-radius: 5px;">Explore Now</a>
+    </div>
+
+    <div class="course-card" style="flex: 1 1 300px; max-width: 300px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ccc; padding: 20px; box-sizing: border-box; min-height: 350px;">
+      <div>
+        <h3>Python for Data Science (Scaler)</h3>
+        <p style="text-align: justify; margin-bottom: 20px;">
+          Explore Python fundamentals, data preprocessing, visualization, and ML concepts through Scaler’s data science course.
+        </p>
+      </div>
+      <a href="https://www.scaler.com/topics/course/python-for-data-science/" target="_blank" style="align-self: flex-start; padding: 10px 20px; background-color: #5B3B99; color: white; text-decoration: none; border-radius: 5px;">Explore Now</a>
+    </div>
+
+    <div class="course-card" style="flex: 1 1 300px; max-width: 300px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ccc; padding: 20px; box-sizing: border-box; min-height: 350px;">
+      <div>
+        <h3>Data Analysis with Python (FreeCodeCamp)</h3>
+        <p style="text-align: justify; margin-bottom: 20px;">
+          Learn data cleaning, visualization, and analysis using Python libraries like NumPy, Pandas, and Matplotlib.
+        </p>
+      </div>
+      <a href="https://www.freecodecamp.org/learn/data-analysis-with-python/" target="_blank" style="align-self: flex-start; padding: 10px 20px; background-color: #5B3B99; color: white; text-decoration: none; border-radius: 5px;">Explore Now</a>
+    </div>
+
+    <div class="course-card" style="flex: 1 1 300px; max-width: 300px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ccc; padding: 20px; box-sizing: border-box; min-height: 350px;">
+      <div>
+        <h3>Machine Learning with Python (FreeCodeCamp)</h3>
+        <p style="text-align: justify; margin-bottom: 20px;">
+          Master ML techniques using Python, TensorFlow, and Scikit-Learn. Build neural networks and predictive models.
+        </p>
+      </div>
+      <a href="https://www.freecodecamp.org/learn/machine-learning-with-python/" target="_blank" style="align-self: flex-start; padding: 10px 20px; background-color: #5B3B99; color: white; text-decoration: none; border-radius: 5px;">Explore Now</a>
+    </div>
+
+    <div class="course-card" style="flex: 1 1 300px; max-width: 300px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ccc; padding: 20px; box-sizing: border-box; min-height: 350px;">
+      <div>
+        <h3>MySQL Tutorial (Scaler)</h3>
+        <p style="text-align: justify; margin-bottom: 20px;">
+          Learn MySQL database fundamentals, writing queries, and managing data efficiently with real-world examples.
+        </p>
+      </div>
+      <a href="https://www.scaler.com/topics/mysql-tutorial/" target="_blank" style="align-self: flex-start; padding: 10px 20px; background-color: #5B3B99; color: white; text-decoration: none; border-radius: 5px;">Explore Now</a>
+    </div>
+    
+  </div>
+</section>
+
+
+    <!-- Internships Section -->
+    <section id="internships">
+  <h2 style="color: #5B3B99;">Explore New Internships & Recruitment Drives</h2>
+  <div class="course-grid" style="display: flex; flex-wrap: wrap; gap: 20px;">
+
+    <!-- Software Development Internships -->
+    <div class="course-card" style="flex: 1 1 300px; max-width: 300px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ccc; padding: 20px; box-sizing: border-box; min-height: 350px;">
+      <div>
+        <h3>Software Development Internships</h3>
+        <p style="text-align: justify; margin-bottom: 20px;">
+          Build real-world applications and enhance your coding skills with hands-on software development internships across various domains and technologies.
+        </p>
+      </div>
+      <a href="https://internshala.com/internships/software-development-internship/" target="_blank" style="align-self: flex-start; padding: 10px 20px; background-color: #5B3B99; color: white; text-decoration: none; border-radius: 5px;">Explore Now</a>
+    </div>
+
+    <!-- Data Science Internships -->
+    <div class="course-card" style="flex: 1 1 300px; max-width: 300px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ccc; padding: 20px; box-sizing: border-box; min-height: 350px;">
+      <div>
+        <h3>Data Science Internships</h3>
+        <p style="text-align: justify; margin-bottom: 20px;">
+          Work with real-world datasets and machine learning models to gain hands-on experience in analytics, data visualization, and AI-powered decision-making.
+        </p>
+      </div>
+      <a href="https://www.letsintern.com/internships/data-science-internship" target="_blank" style="align-self: flex-start; padding: 10px 20px; background-color: #5B3B99; color: white; text-decoration: none; border-radius: 5px;">Explore Now</a>
+    </div>
+
+    <!-- Cloud Computing Internships -->
+    <div class="course-card" style="flex: 1 1 300px; max-width: 300px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ccc; padding: 20px; box-sizing: border-box; min-height: 350px;">
+      <div>
+        <h3>Cloud Computing Internships</h3>
+        <p style="text-align: justify; margin-bottom: 20px;">
+          Learn to manage and deploy scalable cloud-based applications using leading platforms such as AWS, Azure, and Google Cloud.
+        </p>
+      </div>
+      <a href="https://careers.microsoft.com/v2/global/en/students" target="_blank" style="align-self: flex-start; padding: 10px 20px; background-color: #5B3B99; color: white; text-decoration: none; border-radius: 5px;">Explore Now</a>
+    </div>
+
+    <!-- Mobile App Development Internships -->
+    <div class="course-card" style="flex: 1 1 300px; max-width: 300px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ccc; padding: 20px; box-sizing: border-box; min-height: 350px;">
+      <div>
+        <h3>Mobile App Development Internships</h3>
+        <p style="text-align: justify; margin-bottom: 20px;">
+          Create innovative mobile applications for Android and iOS platforms while gaining practical exposure to app design and deployment.
+        </p>
+      </div>
+      <a href="https://www.glassdoor.co.in/Internship/Mobile-App-Developer-Internship-Jobs-EI_IE_IE.0,15_KO16,42.htm" target="_blank" style="align-self: flex-start; padding: 10px 20px; background-color: #5B3B99; color: white; text-decoration: none; border-radius: 5px;">Explore Now</a>
+    </div>
+
+    <!-- Infosys Mock Assessment -->
+    <div class="course-card" style="flex: 1 1 300px; max-width: 300px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ccc; padding: 20px; box-sizing: border-box; min-height: 350px;">
+      <div>
+        <h3>Infosys Mock Assessment (2026 Batch)</h3>
+        <p style="text-align: justify; margin-bottom: 20px;">
+          Prepare for Infosys campus placements with a real-pattern mock assessment conducted by APTPO Consortium and Placify. Boost your confidence before the actual drive.
+        </p>
+      </div>
+      <a href="https://forms.gle/ec5wA3nwPCva9Wzb8" target="_blank" style="align-self: flex-start; padding: 10px 20px; background-color: #5B3B99; color: white; text-decoration: none; border-radius: 5px;">Register Now</a>
+    </div>
+
+    <!-- Infosys Campus Recruitment -->
+    <div class="course-card" style="flex: 1 1 300px; max-width: 300px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ccc; padding: 20px; box-sizing: border-box; min-height: 350px;">
+      <div>
+        <h3>Infosys Campus Recruitment (2026 Batch)</h3>
+        <p style="text-align: justify; margin-bottom: 20px;">
+          Infosys is hiring female candidates for the role of System Engineer with a package of ₹3.6 LPA. Register before 5th October 2025 to participate in the campus drive.
+        </p>
+      </div>
+      <a href="https://forms.gle/6A9R97nCb5Em6mKh6" target="_blank" style="align-self: flex-start; padding: 10px 20px; background-color: #5B3B99; color: white; text-decoration: none; border-radius: 5px;">Apply Now</a>
+    </div>
+
+    <!-- Ocean Sea Link Recruitment -->
+    <div class="course-card" style="flex: 1 1 300px; max-width: 300px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ccc; padding: 20px; box-sizing: border-box; min-height: 350px;">
+      <div>
+        <h3>Ocean Sea Link Recruitment Drive</h3>
+        <p style="text-align: justify; margin-bottom: 20px;">
+          On-campus recruitment for ECE and EEE male candidates. CTC: ₹5.75–₹6.75 LPA. Roles include Trainee to Senior Electro-Technical Officer positions with onboard training and international opportunities.
+        </p>
+      </div>
+      <a href="https://forms.gle/WUCzmh4TfRdsLGHS9" target="_blank" style="align-self: flex-start; padding: 10px 20px; background-color: #5B3B99; color: white; text-decoration: none; border-radius: 5px;">Register Now</a>
+    </div>
+
+    <!-- Recruit CRM UX Design Internship -->
+    <div class="course-card" style="flex: 1 1 300px; max-width: 300px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ccc; padding: 20px; box-sizing: border-box; min-height: 350px;">
+      <div>
+        <h3>Recruit CRM – UX Design Internship</h3>
+        <p style="text-align: justify; margin-bottom: 20px;">
+          SaaS company offering UX Design internships with a stipend up to ₹20,000/month and a post-training CTC of ₹9 LPA. Ideal for B.Tech/MCA students passionate about design.
+        </p>
+      </div>
+      <a href="https://recruitcrm.io/apply/17531884348020101839GRf?utm_source=internal+hiring&utm_medium=job+candidate&utm_campaign=hiring" target="_blank" style="align-self: flex-start; padding: 10px 20px; background-color: #5B3B99; color: white; text-decoration: none; border-radius: 5px;">Apply Now</a>
+    </div>
+
+    <!-- Infosys Walk-In Drives -->
+    <div class="course-card" style="flex: 1 1 300px; max-width: 300px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ccc; padding: 20px; box-sizing: border-box; min-height: 350px;">
+      <div>
+        <h3>Infosys Walk-In Week (Bangalore & Hyderabad)</h3>
+        <p style="text-align: justify; margin-bottom: 20px;">
+          Infosys is conducting walk-in drives for freshers and experienced candidates in Bangalore and Hyderabad. Join between 23–27 September 2025.
+        </p>
+      </div>
+      <a href="https://www.linkedin.com/jobs/view/4302771482" target="_blank" style="align-self: flex-start; padding: 10px 20px; background-color: #5B3B99; color: white; text-decoration: none; border-radius: 5px;">View Details</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+    <div class="heading">
+        <h1 style="color: #5B3B99;"> Fill out your registered course or Internship details</h1>
+        <P>Fill out the respective registered course details</P>
+    
+        <button onclick="window.location.href='https://forms.gle/mhaXZ6ZAzsiMcv1k8'" >2022-2026</button><br>
+        <button onclick="window.location.href=' https://forms.gle/fQmvKNK8t6pRsy8z5'" >2023-2027</button><br>
+        <button onclick="window.location.href='https://forms.gle/h6JSZV4Qdj6FUCQ58'" >2024-2028</button><br>
+        <button onclick="window.location.href='https://forms.gle/h6JSZV4Qdj6FUCQ58'" >2025-2029</button><br>
+
+
+      </div>  
+    
+    
+      <div class="container">
+        <h2 style="color: #5B3B99;">Create Your Professional Resume</h2>
+        <p class="lead">Use the following tools to build your resume:</p>
+        
+        <!-- First Row with 3 Boxes -->
+        <div class="row justify-content-center">
+            <!-- Canva -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <h3 class="card-title">Canva Resume Builder</h3>
+                    <p class="card-text">Design a beautiful and professional resume with Canva’s easy-to-use platform.</p>
+                    <a href="https://www.canva.com/resumes/templates/" target="_blank" class="cta-button">Get Started</a>
+                </div>
+            </div>
+            
+            <!-- NovoResume -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <h3 class="card-title">Zety</h3>
+                    <p class="card-text">Create a professional resume with step-by-step guidance and customizable templates.</p>
+                    <a href="https://zety.com/in/resume-templates" target="_blank" class="cta-button">Get Started</a>
+                </div>
+            </div>
+    
+          
+        </div>
+    
+        <!-- Second Row with 3 Boxes -->
+        <div class="row justify-content-center">
+            <!-- Resume Maker -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <h3 class="card-title">InstaResume.IO</h3>
+                    <p class="card-text">Create your resume with easy-to-use templates and professional designs.</p>
+                    <a href="https://instaresume.io/resume-templates" target="_blank" class="cta-button">Get Started</a>
+                </div>
+            </div>
+    
+            <!-- VisualCV -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <h3 class="card-title">Hackerrank</h3>
+                    <p class="card-text">Build a standout resume using professional templates and personalized designs.</p>
+                    <a href="https://www.hackerrank.com/resume" target="_blank" class="cta-button">Get Started</a>
+                </div>
+            </div>
+    
+           
+        </div>
+    </div>
+  
+       <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>Email: <a href="mailto:novaversityclubpscmr@gmail.com">novaversityclubpscmr@gmail.com</a></p>
+                </div>
+                <div class="footer-right">
+                    <a href="https://www.linkedin.com/in/novaversity-club-9b53272b0/"target="blank" aria-label="Twitter"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/novaversity/" target="blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@pscmrcet9394/featured" target="blank" aria-label="Facebook"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="#">Aboutus</a>
+                
+                <a href="#">contact Us</a>
+                
+            </nav>
+            <p>©2024 PSCMR CSE-DS Novavaersity Club - All Rights Reserved
+
+          <p>Developed by: <b>Peravali Keerthana </b> (2026 Batch) Email: <b> keerthanaperavali9@gmail.com</b> </p></p>
+        </div>
+    </footer>
+ 
+
+</body>
+</html>

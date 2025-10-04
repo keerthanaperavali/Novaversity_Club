@@ -1,0 +1,41 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .main-content {
+    min-height: 100%; /* Ensures content takes at least the full viewport height */
+    padding-bottom: 50px; /* Ensures content doesn't overlap the footer */
+  }
+  
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1); /* transparent background */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.2rem;
+  z-index: 1000;
+
+  /* Glass effect */
+  backdrop-filter: blur(10px);   /* blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-bottom: 1px solid rgba(139, 42, 42, 0.3); /* subtle border */
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  padding: 0.75rem 1.5rem;
+  color: rgb(163, 136, 136) !important; /* ensure links stay visible */
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #12cdcd !important; /* glow effect on hover */
+}
+
+  
